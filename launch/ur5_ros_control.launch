@@ -53,7 +53,7 @@
     output="screen" args="load $(arg stopped_controllers)" />
 
   <!-- Convert joint states to /tf tranforms -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
     <param name="publish_frequency" type="double" value="50.0" />
     <param name="tf_prefix" type="string" value="" />
   </node>
